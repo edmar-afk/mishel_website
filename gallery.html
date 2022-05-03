@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gallery</title>
+   <link rel="icon" type="image/x-icon" href="images/JH_logo.png">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/hamburger.css">
+   <link rel="stylesheet" href="css/fab.css">
+   <link rel="stylesheet" href="css/disclaimer.css">
+   <link rel="stylesheet" href="css/tabs.css">
+  
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <img class="logo_header"src="images/JH_logo.png" width="50px"><span style="margin-left:10px;"></span><img class="logo_header"src="images/SETLOGO.jpg" width="50px"><span style="margin-left:10px;"></span> <a href="#" class="logo">  JHCSC </a>
+   <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+<div class="navigation__nav">
+<ul class="navigation__list">
+
+
+   <li class="navigation__item"><a href="index.html" class="navigation__link"> Home</a></li>
+
+   <li class="navigation__item"><a href="faculty.html" class="navigation__link"> Faculty</a></li>
+ 
+   <li class="navigation__item"><a href="curriculum.html" class="navigation__link"> Curriculum</a></li>
+ 
+   <li class="navigation__item"><a href="graduates.html" class="navigation__link"> Graduates</a></li>
+ 
+   <li class="navigation__item"><a href="gallery.html" class="navigation__link"> Gallery</a></li>
+ 
+   <li class="navigation__item"><a href="reference.html" class="navigation__link"> References</a></li>
+ 
+   <li class="navigation__item"><a href="about.html" class="navigation__link"> About</a></li>
+</ul>
+</div>
+</div>
+</header>
+
+
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>Galleries </h3>
+   
+</section>
+
+<!-- gallert section starts  -->
+   
+<div class="tab">
+   <button class="tablinks" onclick="gallerySelect(event, 'Videos')" id="defaultOpen">Videos</button>
+   <button class="tablinks" onclick="gallerySelect(event, 'Photos')">Photos</button>
+   
+ </div>
+ 
+ <div id="Videos" class="tabcontent">
+    <span style="margin-bottom: -100px;"></span>
+   <iframe  src="gallery/index.html" style="overflow:scroll; "  width="100%" height="700px"></iframe>
+
+   
+ </div>
+ 
+ <div id="Photos" class="tabcontent">
+  
+   <iframe  src="gallery/photos/index.html" style="overflow:scroll; " width="100%" height="1000px"></iframe>
+    
+ </div>
+ 
+<!-- gallery section ends -->
+
+<!-- disclaimer -->
+
+<div class="fab__ pulse">
+   
+   <img src="images/disclaimer.gif" style="border-radius: 55%;" width="57px" height="53px"><g>
+    <g>
+       <g>
+          <path d="M117.333,149.333H352c5.896,0,10.667-4.771,10.667-10.667c0-5.896-4.771-10.667-10.667-10.667H117.333     c-5.896,0-10.667,4.771-10.667,10.667C106.667,144.563,111.438,149.333,117.333,149.333z" fill="#FFFFFF"/>
+          <path d="M245.333,256h-128c-5.896,0-10.667,4.771-10.667,10.667c0,5.896,4.771,10.667,10.667,10.667h128     c5.896,0,10.667-4.771,10.667-10.667C256,260.771,251.229,256,245.333,256z" fill="#FFFFFF"/>
+          <path d="M471.167,64c-0.618,0-1.217,0.155-1.833,0.184V64c0-23.531-19.146-42.667-42.667-42.667h-384     C19.146,21.333,0,40.469,0,64v416c0,4.313,2.604,8.208,6.583,9.854c1.313,0.552,2.708,0.813,4.083,0.813     c2.771,0,5.5-1.083,7.542-3.125L121.75,384h304.917c23.521,0,42.667-19.135,42.667-42.667V164.411l30.708-30.703c0,0,0,0,0-0.01     c7.604-7.604,11.958-18.125,11.958-28.865C512,82.313,493.688,64,471.167,64z M448,341.333c0,11.76-9.563,21.333-21.333,21.333     H117.333c-2.833,0-5.542,1.125-7.542,3.125L21.333,454.25V64c0-11.76,9.563-21.333,21.333-21.333h384     C438.438,42.667,448,52.24,448,64v7.286c-2.025,1.392-3.962,2.923-5.708,4.672L326.232,192H117.333     c-5.896,0-10.667,4.771-10.667,10.667c0,5.896,4.771,10.667,10.667,10.667h191.785l-10.243,51.24     c-0.708,3.5,0.396,7.115,2.917,9.635c2.021,2.021,4.75,3.125,7.542,3.125c0.688,0,1.396-0.073,2.083-0.208l53.313-10.667     c2.083-0.417,3.979-1.427,5.458-2.917L448,185.742V341.333z M357.396,246.177l-34.458,6.896l6.896-34.5l96.828-96.828     l27.587,27.587L357.396,246.177z M484.958,118.625l-15.625,15.625l-27.589-27.589l15.63-15.63     c3.625-3.615,8.646-5.698,13.792-5.698c10.75,0,19.5,8.75,19.5,19.5C490.667,109.958,488.583,114.99,484.958,118.625z" fill="#FFFFFF"/>
+       </g>
+    </g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ <g>
+ </g>
+ </svg>
+ </div>
+ <div class="menu__">
+    <h1 style="text-align: center; font-size:30px;">Disclaimer</h1> <br>
+    <p style="font-size: 16px; padding:15px;">This presentation is for educational purpose<b> ONLY.</b>
+      Use this information is your responsibility. <br> <br>
+      JHSCSC and I will not be held accountable for any illegal
+      activities.<br><br>
+      <b style="font-size: 13px; margin-left:5px; color:red;">Note: Some icons not showing if
+         you're not connecting to internet.</b>
+   </p>
+ </div>
+
+ <!-- disclaimer ends -->
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/tabs.js"></script>
+
+</body>
+</html>

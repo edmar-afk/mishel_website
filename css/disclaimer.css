@@ -1,0 +1,68 @@
+
+  .fab__ svg {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    ;
+  }
+  .fab__, .menu__ {
+    width: 56px;
+    height: 50px;
+    border-radius: 28px;
+    background: #2ecc71;
+    position: fixed;
+    bottom: 40px;
+    
+    left: 40px;
+    z-index: 999;
+  }
+  
+  .menu__ {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: .4s;
+    transition-timing-function: ease-in-out;
+  }
+
+
+  .menu__:hover, .fab__:hover + .menu__, .menu__:hover + .menu__ {
+    background: #FFF;
+    width: 250px;
+    height: 325px;
+    border-radius: 3px;
+    visibility: visible;
+  }
+  .pulse {
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(46,204,113, 0.4);
+    animation: pulse 5s infinite;
+  }
+  .stopPulse{
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgb(204, 46, 46);
+    }
+    30% {
+        -webkit-box-shadow: 0 0 0 10px rgba(179, 41, 41, 0.637);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(172, 16, 16, 0.363);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(46,204,113, 0.4);
+      box-shadow: 0 0 0 0 rgba(46,204,113, 0.4);
+    }
+    30% {
+        -moz-box-shadow: 0 0 0 15px rgba(46,204,113, 0);
+        box-shadow: 0 0 0 15px rgba(46,204,113, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(46,204,113, 0);
+        box-shadow: 0 0 0 0 rgba(46,204,113, 0);
+    }
+  }
