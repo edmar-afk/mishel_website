@@ -16,7 +16,7 @@
    <link rel="stylesheet" href="css/fab.css">
    <link rel="stylesheet" href="css/disclaimer.css">
    <link rel="stylesheet" href="css/tabs.css">
-  
+   <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
    
@@ -42,13 +42,9 @@
 
    <li class="navigation__item"><a href="faculty.html" class="navigation__link"> Faculty</a></li>
  
-   <li class="navigation__item"><a href="curriculum.html" class="navigation__link"> Curriculum</a></li>
- 
    <li class="navigation__item"><a href="graduates.html" class="navigation__link"> Graduates</a></li>
  
    <li class="navigation__item"><a href="gallery.html" class="navigation__link"> Gallery</a></li>
- 
-   <li class="navigation__item"><a href="reference.html" class="navigation__link"> References</a></li>
  
    <li class="navigation__item"><a href="about.html" class="navigation__link"> About</a></li>
 </ul>
@@ -134,20 +130,30 @@
  </svg>
  </div>
  <div class="menu__">
-    <h1 style="text-align: center; font-size:30px;">Disclaimer</h1> <br>
-    <p style="font-size: 16px; padding:15px;">This presentation is for educational purpose<b> ONLY.</b>
-      Use this information is your responsibility. <br> <br>
-      JHSCSC and I will not be held accountable for any illegal
-      activities.<br><br>
-      <b style="font-size: 13px; margin-left:5px; color:red;">Note: Some icons not showing if
-         you're not connecting to internet.</b>
-   </p>
- </div>
+   <h1 style="text-align: center; font-size:30px;">Disclaimer</h1>
+   <p style="font-size: 16px; padding:15px;">This presentation is for educational purpose<b> ONLY.</b>
+     Use this information is your responsibility.
+     JHSCSC and I will not be held accountable for any illegal
+     activities. <br> <center><a class="button_ref" id="myBtn" href="#"> Reference</a></center><br>
+     <b style="font-size: 13px; color:red;">Note: Some icons not showing if
+        you're not connecting to internet.</b>
+  </p>
+</div>
 
+
+ <div id="myModal" class="modal">
+
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <iframe src="reference/index.html" width="100%" height="500px" frameborder="0"></iframe>
+   </div>
+ 
+ </div>
  <!-- disclaimer ends -->
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 <script src="js/tabs.js"></script>
-
+<script src="js/modal.js"></script>
 </body>
 </html>

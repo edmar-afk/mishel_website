@@ -4,20 +4,19 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <title>Graduates</title>
    <link rel="icon" type="image/x-icon" href="images/JH_logo.png">
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   <!-- swiper css link  -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
+   
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/hamburger.css">
+   <link rel="stylesheet" href="css/fab.css">
    <link rel="stylesheet" href="css/disclaimer.css">
+   <link rel="stylesheet" href="css/tabs-graduates.css">
    <link rel="stylesheet" href="css/modal.css">
-
 </head>
 <body>
    
@@ -26,7 +25,6 @@
 <header class="header">
 
    <img class="logo_header"src="images/JH_logo.png" width="50px"><span style="margin-left:10px;"></span><img class="logo_header"src="images/SETLOGO.jpg" width="50px"><span style="margin-left:10px;"></span> <a href="#" class="logo">  JHCSC </a>
-
    <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -40,104 +38,57 @@
 <ul class="navigation__list">
 
 
-  <li class="navigation__item"><a href="index.html" class="navigation__link"> Home</a></li>
+   <li class="navigation__item"><a href="index.html" class="navigation__link"> Home</a></li>
 
-  <li class="navigation__item"><a href="faculty.html" class="navigation__link"> Faculty</a></li>
-
-  <li class="navigation__item"><a href="graduates.html" class="navigation__link"> Graduates</a></li>
-
-  <li class="navigation__item"><a href="gallery.html" class="navigation__link"> Gallery</a></li>
-
-  <li class="navigation__item"><a href="about.html" class="navigation__link"> About</a></li>
+   <li class="navigation__item"><a href="faculty.html" class="navigation__link"> Faculty</a></li>
+ 
+   <li class="navigation__item"><a href="graduates.html" class="navigation__link"> Graduates</a></li>
+ 
+   <li class="navigation__item"><a href="gallery.html" class="navigation__link"> Gallery</a></li>
+ 
+   <li class="navigation__item"><a href="about.html" class="navigation__link"> About</a></li>
 </ul>
 </div>
 </div>
 </header>
 
 
+
 <!-- header section ends -->
 
-<!-- home section starts  -->
-
-<section class="home">
-
-   <div class="swiper home-slider">
-      
-      <div class="swiper-wrapper">
-
-         <section class="swiper-slide slide" style="background:linear-gradient(to bottom right, rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.856)), url(images/JHCSC_background.jpg) no-repeat;">
-            <div class="content">
-               <h3>Quality education for service</h3>
-               <p>Delivering quality higher education to the doorsteps of ZAMBOSURIANS</p>
-               <a href="#" id="myBtn_curr" class="btn" style="background-color: #7ed56f; color:rgb(0, 0, 0);">Curriculum</a>
-            </div>
-         </section>
-      </div>
-
-      <div class="swiper-pagination"></div>
-
-   </div>
-
+<section class="heading-link">
+   <h3>Graduates </h3>
+   
 </section>
 
-<!-- home section ends -->
-
-<!-- subjects section starts  -->
-
-<section class="subjects">
-
-   <h1 class="heading">Our Popular Courses</h1>
-
-   <div class="box-container">
-
-      <div class="box" style="background-color: #f7f3e3;">
-         <img src="images/PolSci.gif" draggable="false" alt="">
-         <h3>Ab - Polsci</h3>
-        
-      </div>
-
-      <div class="box" style="background-color: #1481ba;">
-         <img src="images/BSED.gif" draggable="false" alt="">
-         <h3>BSED</h3>
-        
-      </div>
-
-      <div class="box" style="background-color: #06111c;">
-         <img src="images/BSIT.gif" draggable="false" alt="">
-         <h3 style="color: #fff;">BSIT</h3>
-        
-      </div>
-
-      <div class="box" style="background-color: #eeebd3;">
-         <img src="images/Agriculture.gif" draggable="false" alt="">
-         <h3>BSA</h3>
-        
-      </div>
-
-      <div class="box">
-         <img src="images/SocialWorks.gif" draggable="false" alt="">
-         <h3>BSSW</h3>
-         
-      </div>
-
-      <div class="box" style="background-color: #e7e7e7;">
-         <img src="images/Civil Engineering.gif" draggable="false" alt="">
-         <h3>Civil Engineering</h3>
-         
-      </div>
-
-   </div>
-
-</section>
-
-<!-- subjects section ends -->
-
+<!-- gallert section starts  -->
+   
+<div class="tab">
+   <button class="tablinks" onclick="gallerySelect(event, 'main')" id="defaultOpen">Main</button>
+   <button class="tablinks" onclick="gallerySelect(event, 'offSite')">Off-site</button>
+   
+ </div>
+ 
+ <div id="main" class="tabcontent">
+    <span style="margin-bottom: -100px;"></span>
+    <iframe  src="graduates/main/index.html" style="overflow:scroll; " width="100%" height="1000px"></iframe>
+    
+   
+ </div>
+ 
+ <div id="offSite" class="tabcontent">
+  
+   <iframe  src="graduates/off-site/index.html" style="overflow:scroll; " width="100%" height="1000px"></iframe>
+    
+ </div>
+ 
+<!-- gallery section ends -->
 
 <!-- disclaimer -->
 
 <div class="fab__ pulse">
-   <img src="images/disclaimer.gif" style="border-radius: 55%;" width="56px" height="53px">
- <g>
+   
+   <img src="images/disclaimer.gif" style="border-radius: 55%;" width="57px" height="53px"><g>
     <g>
        <g>
           <path d="M117.333,149.333H352c5.896,0,10.667-4.771,10.667-10.667c0-5.896-4.771-10.667-10.667-10.667H117.333     c-5.896,0-10.667,4.771-10.667,10.667C106.667,144.563,111.438,149.333,117.333,149.333z" fill="#FFFFFF"/>
@@ -179,15 +130,16 @@
  </svg>
  </div>
  <div class="menu__">
-    <h1 style="text-align: center; font-size:30px;">Disclaimer</h1>
-    <p style="font-size: 16px; padding:15px;">This presentation is for educational purpose<b> ONLY.</b>
-      Use this information is your responsibility.
-      JHSCSC and I will not be held accountable for any illegal
-      activities. <br> <center><a class="button_ref" id="myBtn" href="#"> Reference</a></center><br>
-      <b style="font-size: 13px; color:red;">Note: Some icons not showing if
-         you're not connecting to internet.</b>
-   </p>
- </div>
+   <h1 style="text-align: center; font-size:30px;">Disclaimer</h1>
+   <p style="font-size: 16px; padding:15px;">This presentation is for educational purpose<b> ONLY.</b>
+     Use this information is your responsibility.
+     JHSCSC and I will not be held accountable for any illegal
+     activities. <br> <center><a class="button_ref" id="myBtn" href="#"> Reference</a></center><br>
+     <b style="font-size: 13px; color:red;">Note: Some icons not showing if
+        you're not connecting to internet.</b>
+  </p>
+</div>
+
 
  <div id="myModal" class="modal">
 
@@ -198,21 +150,10 @@
    </div>
  
  </div>
-
- <div id="curriculum" class="modal">
-
-   <!-- Modal content -->
-   <div class="modal-content">
-     <span class="close-curr">&times;</span>
-     <iframe src="curriculum.pdf" width="100%" height="550px" frameborder="0"></iframe>
-   </div>
- 
- </div>
-
  <!-- disclaimer ends -->
-
-
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/tabs-graduates.js"></script>
+<script src="js/modal.js"></script>
 </body>
-   <script src="js/modal.js"></script>
-   <script src="js/modal_curriculum.js"></script>
 </html>

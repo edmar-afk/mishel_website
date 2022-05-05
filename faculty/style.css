@@ -4,7 +4,7 @@
 body {
   background: #eceef1;
   font-family: 'Slabo 27px', serif;
-  color: #333a45;
+  color: #161616;
 }
 .wrapper {
   margin:0;
@@ -26,7 +26,7 @@ body {
 .header__subtitle {
   margin: 0;
   font-size: 1.5em;
-  color: #949fb0;
+  color: #1d1d1d;
   font-family: 'Yesteryear', cursive;
   font-weight: 500;
   line-height: 1.1;
@@ -38,14 +38,10 @@ body {
   
 }
 
-.card_2022{
-  background:linear-gradient(to bottom right, rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.63)), url(cyberian2022.PNG) no-repeat;
-  background-size: cover;
-}
-
-.higalaay{
-  background:linear-gradient(to bottom right, rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.63)), url(higalaay2021/photos/6.jpg) no-repeat;
-  background-size: cover;
+.SET_dept{
+  background:linear-gradient(to bottom right, rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.63)), url(set.png) no-repeat;
+  background-size:cover;
+  
 }
 
 .jhcsc {
